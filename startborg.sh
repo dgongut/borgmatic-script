@@ -142,7 +142,7 @@ fi
 TOTAL_TIME="${TOTAL_TIME}${S}s"
 
 # Calculating disk space used and formatting
-SPACE_LEFT=$(df /bkp-$DESTINATION_NAME -h | awk '{print $3"/"$2" ("$5")"}' | sed -n '2p' | sed 's/T/TB/g; s/G/GB/g; s/M/MB/g')
+SPACE_LEFT=$(df $BORG_REPO -h | awk '{print $3"/"$2" ("$5")"}' | sed -n '2p' | sed 's/T/TB/g; s/G/GB/g; s/M/MB/g')
 
 TIME_AND_SPACE_LEFT="$TIME_SPENT$TOTAL_TIME
 $OCCUPIED_SPACE$SPACE_LEFT"
