@@ -11,3 +11,7 @@ The startborg.sh is a variation of "Automating backups" script from official doc
 I strongly recommend reading the official documentation before starting the script.
 
 I am not responsible for any copy failures that may occur due to misuse of the script.
+
+This is an example output in Telegram (All messages can be customised):
+
+![image](https://github.com/dgongut/borgmatic-script/assets/48691032/48e2d7d8-75b7-42b0-8303-b4bf17cd8584)
